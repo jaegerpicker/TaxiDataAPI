@@ -1,7 +1,7 @@
  {
-  "author":      "YOU <YOU@example.com>",
-  "name":        "my_actionhero_project",
-  "description": "my actionhero project",
+  "author":      "Shawn Campbell <jaegerpicker@gmail.com>",
+  "name":        "TaxiData-API",
+  "description": "An api to suppliy data for the Cheap Corner Taxi app",
   "version":     "0.0.1",
   "engines": {
     "node": ">=0.8.0"
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "mocha":  "latest",
+    "chai":   "latest",
     "should": "latest"
   },
   "scripts": {
