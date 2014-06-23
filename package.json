@@ -1,0 +1,22 @@
+{
+  "name": "TaxiCheapCornerAPIServer",
+  "version": "0.0.1",
+  "description": "An api server using actionhero.js as a rest api to lookup which nearby location provides the cheapest rates to the provided destination based on current location provided",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaegerpicker/TaxiDataAPI.git"
+  },
+  "keywords": [
+    "API",
+    "actionhero"
+  ],
+  "author": "Shawn Campbell <jaegerpicker@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jaegerpicker/TaxiDataAPI/issues"
+  }
+}
