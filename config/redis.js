@@ -3,7 +3,7 @@
 // fake redis | https://github.com/hdachev/fakeredis
 // sentinel redis | https://github.com/ortoo/node-redis-sentinel
 
-exports.default = { 
+exports.default = {
   redis: function(api){
     return {
       package: 'fakeredis',
@@ -23,11 +23,11 @@ exports.default = {
       //   master_auth_pass: null,
       //   masterName: 'BUS',
       // }
-    }
+    };
   }
-}
+};
 
-exports.test = { 
+exports.test = {
   redis: function(api){
     var package = 'fakeredis';
     if(process.env.fakeredis == 'false'){
@@ -41,6 +41,6 @@ exports.test = {
       'password': null,
       'options': null,
       'DB': 2
-    }
+    };
   }
-}
+};

@@ -1,25 +1,26 @@
- {
-  "author":      "Shawn Campbell <jaegerpicker@gmail.com>",
-  "name":        "TaxiData-API",
+{
+  "author": "Shawn Campbell <jaegerpicker@gmail.com>",
+  "name": "TaxiData-API",
   "description": "An api to suppliy data for the Cheap Corner Taxi app",
-  "version":     "0.0.1",
+  "version": "0.0.1",
   "engines": {
     "node": ">=0.8.0"
   },
   "dependencies": {
     "actionhero": "8.0.8",
-    "grunt":      "latest"
+    "grunt": "latest",
+    "mongoose": "~3.8.12"
   },
   "devDependencies": {
-    "mocha":  "latest",
-    "chai":   "latest",
+    "mocha": "latest",
+    "chai": "latest",
     "should": "latest"
   },
   "scripts": {
-    "help":         "actionhero help",
-    "start":        "actionhero start",
-    "actionhero":   "actionhero",
+    "help": "actionhero help",
+    "start": "actionhero start",
+    "actionhero": "actionhero",
     "startCluster": "actionhero startCluster",
-    "test":         "mocha"
+    "test": "mocha"
   }
 }
