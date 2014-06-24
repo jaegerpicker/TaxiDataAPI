@@ -7,9 +7,12 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "actionhero": "8.0.8",
+    "actionhero": "9.0.0",
     "grunt": "latest",
-    "mongoose": "~3.8.12"
+    "mongoose": "~3.8.12",
+    "redis": "~0.10.3",
+    "redis-sentinel": "~0.1.0",
+    "redis-sentinel-client": "~0.2.5"
   },
   "devDependencies": {
     "mocha": "latest",

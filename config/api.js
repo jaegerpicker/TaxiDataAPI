@@ -1,15 +1,19 @@
+var fs = require('fs');
+var cluster = require('cluster');
+
+
 exports.default = {
   general: function(api){
     return {
       apiVersion: '0.0.1',
-      serverName: 'actionhero API',
+      serverName: 'CheapCornerAPI',
       // id can be set here, or it will be generated dynamically.
       //  Be sure that every server you run has a unique ID (which will happen when generated dynamically)
       //  id: 'myActionHeroServer',
       // A unique token to your application that servers will use to authenticate to each other
       serverToken: 'change-me',
       // The welcome message seen by TCP and webSocket clients upon connection
-      welcomeMessage: 'Hello! Welcome to the actionhero api',
+      welcomeMessage: 'Hello! Welcome to the cheap corner api server',
       // The body message to accompany 404 (file not found) errors regarding flat files
       flatFileNotFoundMessage: 'Sorry, that file is not found :(',
       // The message to accompany 500 errors (internal server errors)
@@ -35,7 +39,7 @@ exports.default = {
         'log':         [ __dirname + '/../log'          ] ,
         'server':      [ __dirname + '/../servers'      ] ,
         'initializer': [ __dirname + '/../initializers' ] ,
-        'plugin':      [ __dirname + '/../node_modules' ] 
+        'plugin':      [ __dirname + '/../node_modules' ]
       },
       // list of actionhero plugins you want to load
       plugins: [
@@ -48,11 +52,11 @@ exports.default = {
         //'secureRoom': {authorized: true},
         'defaultRoom': {}
       }
-    }
+    };
   }
-}
+};
 
-exports.test = { 
+exports.test = {
   general: function(api){
     return {
       id: 'test-server',
@@ -61,16 +65,15 @@ exports.test = {
         'defaultRoom': {},
         'otherRoom': {},
         'secureRoom': {authorized: true}
-      },
-      developmentMode: true
-    }
+      }
+    };
   }
-}
+};
 
-exports.production = { 
+exports.production = {
   general: function(api){
-    return {  
+    return {
       developmentMode: false
-    }
+    };
   }
-}
+};
