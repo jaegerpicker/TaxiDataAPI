@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "mongoose": "~3.8.12",
-    "actionhero": "~9.0.1",
-    "redis": "~0.10.3"
+    "actionhero": "~12.2.3",
+    "redis": "~0.10.3",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "grunt-cli": "~0.1.13",
@@ -28,6 +29,9 @@
     "start": "actionhero start",
     "actionhero": "actionhero",
     "startCluster": "actionhero startCluster",
-    "test": "mocha"
-  }
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
