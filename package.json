@@ -7,7 +7,7 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "mongoose": "~3.8.12",
+    "mongoose": "~5.7.5",
     "actionhero": "~9.0.1",
     "redis": "~0.10.3"
   },
