@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "mongoose": "~3.8.12",
-    "actionhero": "~9.0.1",
+    "actionhero": "~19.1.4",
     "redis": "~0.10.3"
   },
   "devDependencies": {
